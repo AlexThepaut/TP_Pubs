@@ -1,7 +1,7 @@
-var services = require('./services/pubs.service');
+const pubServices = require('./services/pubs.service');
 
 module.exports = {
     services: {
-        pubServices: services
+        pubServices: pubServices
     }
 }
