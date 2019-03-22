@@ -1,9 +1,11 @@
 const pubs = require('../mocks/pubs');
 
 function findAll(){
+    let coucou;
     for(let i = 0; i < pubs.length ; i ++){
-        console.log(`pubs ${i+1} : ${pubs[i].name}`);
+        coucou += `pubs ${i+1} : ${pubs[i].name}`;
     }
+    return coucou;
 }
 
 function findOpenNow(){
@@ -11,5 +13,6 @@ function findOpenNow(){
 }
 
 module.exports = {
-    findAll: findAll
+    findAll: findAll,
+    findOpenNow: findOpenNow
 }
