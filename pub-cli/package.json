@@ -2,17 +2,20 @@
   "name": "pub-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "bin": {
-    "Pub_Cli": "index.js"
+    "pub-cli": "bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "preferGlobal": true,
   "dependencies": {
-    "pub-services": "../pub-services"
+    "pub-services": "../pub-services",
+    "commander": "^2.15.1"
   }
 }
